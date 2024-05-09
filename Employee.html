@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>EMPLOYEE DETAILS</title>
+    <script type="text/javascript">
+        function calc(form) {
+            var sal, hra, da, ta, pf, net;
+            sal = form.salary.value;
+            sal = parseInt(form.salary.value);
+            if (form.name.value == "") {
+                alert("Enter the name");
+            }
+            if (sal > 0) {
+                hra = (sal * 12) / 100;
+                da = (sal * 6) / 100;
+                ta = (sal * 5) / 100;
+                pf = (sal * 3) / 100;
+                net = (sal + hra + ta + da - pf);
+                form.hratext.value = hra;
+                form.datext.value = da;
+                form.tatext.value = ta;
+                form.pftext.value = pf;
+                form.nettext.value = net;
+            }
+            else {
+                alert("Enter numerical input for salary");
+            }
+        }
+    </script>
+</head>
+
+<body font-face="Rupee Foradian">
+    <form name="employee">
+        <br><br>
+        <center>
+            <h3> EMPLOYEE DETAILS</h3><br>
+            <table border=0>
+                <tr>
+                    <td>Name </td>
+                    <td><input type="text" name="name" /></td>
+                </tr>
+                <tr>
+                    <td>Enter the salary </td>
+                    <td><input type="text" name="salary" /></td>
+                </tr>
+                <tr>
+                    <td>HRA </td>
+                    <td><input type="text" name="hratext" /></td>
+                </tr>
+                <tr>
+                    <td>DA </td>
+                    <td><input type="text" name="datext" /></td>
+                </tr>
+                <tr>
+                    <td>TA </td>
+                    <td><input type="text" name="tatext" /></td>
+                </tr>
+                <tr>
+                    <td>PF </td>
+                    <td><input type="text" name="pftext" /></td>
+                </tr>
+                <tr>
+                    <td>Net Pay </td>
+                    <td><input type="text" name="nettext" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <center>
+                            <input type="button" name="calculate" value="Calculate" onclick="calc(this.form)" />
+                            <input type="reset">
+                            <center>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+</body>
+
+</html>
