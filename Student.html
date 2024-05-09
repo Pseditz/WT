@@ -1,0 +1,120 @@
+Main.html
+<html>
+
+<body bgcolor=white text=red>
+    <center>
+        <div>
+            <label>
+                <h2>Student database maintenance</h2>
+            </label>
+            <TABLE>
+                <TR>
+                    <TD><a href="http://localhost:7001/student/register.html">REGISTER</a></TD>
+                </TR>
+                <TR>
+                    <TD><a href="http://localhost:7001/student/find3">SEARCH</a></TD>
+                </TR>
+                <TR>
+                    <TD><a href="http://localhost:7001/student/viewall">VIEW ALL </a></TD>
+                </TR>
+                <TR>
+                    <TD><a href="http://localhost:7001/student/delete2.html">DELETE</a></TD>
+                </TR>
+                <!--<TR><TD><a href="http://localhost:7001/student/update">UPDATE</a></TD></TR>-->
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>
+Register.HTML
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+    <HTML>
+
+    <HEAD>
+        <TITLE> registration </TITLE>
+    </HEAD>
+
+    <BODY bgcolor=teak text=red>
+        <center>
+            <form action="http://localhost:7001/student/register1" method=post>
+                <pre>
+                    Enter Id:
+                    <input type=text name="id" size=4 ><br>
+                    Enter Name:
+                    <input type=text name="name" size=20 ><br>
+                    Enter Age:
+                    <input type=text name="age" size=4 ><br>
+                    Enter Branch:
+                    <input type=text name="branch" size=10 ><br>
+                    Enter Mark1 :
+                    <input type=text name="m1" size=4 ><br>
+                    Enter Mark2 :
+                    <input type=text name="m2" size=4 ><br>
+                    Enter Mark3 :
+                    <input type=text name="m3" size=4 ><br>
+                    Enter Grade:
+                    <input type=text name="grade" size=20 ><br>
+                    Click:
+                    <input type="submit" name="submit" value=register>
+                </pre>
+            </form>
+        </center>
+    </BODY>
+
+    </HTML>
+    insert.html
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+        <HTML>
+
+        <HEAD>
+            <TITLE> registration </TITLE>
+        </HEAD>
+
+        <BODY bgcolor=teak text=red>
+            <form action="http://localhost:7001/student/insert" method=post>
+                <pre>
+                    <div align=center>
+                    Enter Id:
+                    <input type=text name="id" size=4 ><br>
+                    Enter Name:
+                    <input type=text name="name" size=20 ><br>
+                    Enter Age:
+                    <input type=text name="age" size=4 ><br>
+                    Enter Branch:
+                    <input type=text name="branch" size=10 ><br>
+                    Enter Mark1 :
+                    <input type=text name="m1" size=4 ><br>
+                    Enter Mark2 :
+                    <input type=text name="m2" size=4 ><br>
+                    Enter Mark3 :
+                    <input type=text name="m3" size=4 ><br>
+                    Enter Grade:
+                    <input type=text name="grade" size=4 ><br>
+                    <input type="submit" name="submit" value=register>
+                    </div>
+                </pre>
+            </form>
+        </BODY>
+
+        </HTML>
+        delete.html
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+            <HTML>
+
+            <HEAD>
+                <TITLE> DELETE STUDENT RECORD </TITLE>
+            </HEAD>
+
+            <BODY bgcolor=blue text=cyan>
+                <form action="http://localhost:7001/student/delete2" method=post>
+                    <pre>
+                        Enter the ID
+                        :<input type=text name="idno" size=4 ><br>
+                        Click
+                        :<input type="submit" name=submit value=delete>
+                    </pre>
+                </form>
+            </BODY>
+
+            </HTML>
